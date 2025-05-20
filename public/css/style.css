@@ -1,3 +1,27 @@
-.test {
-  color: red;
+/* Header */
+.header {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+.header .inner-logo img {
+  max-height: 50px;
+  max-width: 100%;
+}
+.header .inner-menu .ul-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
 }
