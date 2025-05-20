@@ -25,3 +25,8 @@
   text-align: center;
   color: white;
 }
+
+.container.my-3 .box-head {
+  color: green;
+  padding: 10px 0 20px;
+}
