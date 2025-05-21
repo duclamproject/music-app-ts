@@ -73,6 +73,14 @@
   font-weight: bold;
 }
 
+.singer-detail .inner-actions .inner-heart.active {
+  color: red;
+}
+
+.singer-detail .inner-actions .inner-heart.active i {
+  font-weight: bold;
+}
+
 .singer-detail .inner-action .fa-thumbs-up {
   color: blue;
 }
@@ -88,6 +96,11 @@
 
 .singer-detail .inner-heart:hover {
   color: red;
+  cursor: pointer;
+}
+
+.singer-detail .inner-like:hover {
+  color: blue;
   cursor: pointer;
 }
 
