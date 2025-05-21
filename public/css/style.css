@@ -38,14 +38,14 @@
   padding: 20px 0;
 }
 
-.inner-title {
+.singer-detail .inner-title {
   font-size: 26px;
   font-weight: bold;
   color: #f7931e;
   margin-bottom: 15px;
 }
 
-.inner-actions {
+.singer-detail .inner-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -54,47 +54,55 @@
   font-size: 14px;
 }
 
-.inner-action {
+.singer-detail .inner-action {
   display: flex;
   align-items: center;
   gap: 6px;
   color: #555;
 }
 
-.inner-action i {
+.singer-detail .inner-action i {
   color: #555;
 }
 
-.inner-action .fa-thumbs-up {
+.singer-detail .inner-actions .inner-like.active {
   color: blue;
 }
 
-.inner-action .fa-heart {
+.singer-detail .inner-actions .inner-like.active i {
+  font-weight: bold;
+}
+
+.singer-detail .inner-action .fa-thumbs-up {
+  color: blue;
+}
+
+.singer-detail .inner-action .fa-heart {
   color: red;
 }
 
-.inner-topic {
+.singer-detail .inner-topic {
   padding: 2px 8px;
   border-radius: 6px;
 }
 
-.inner-heart:hover {
+.singer-detail .inner-heart:hover {
   color: red;
   cursor: pointer;
 }
 
-.inner-play {
+.singer-detail .inner-play {
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 20px 0;
 }
 
-.inner-audio {
+.singer-detail .inner-audio {
   width: 700px;
 }
 
-.inner-desc {
+.singer-detail .inner-desc {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -103,7 +111,7 @@
   gap: 0;
 }
 
-.inner-label {
+.singer-detail .inner-label {
   font-weight: bold;
   font-size: 16px;
   color: #f7931e;
@@ -112,7 +120,7 @@
   border-bottom: 1px solid black;
 }
 
-.inner-text {
+.singer-detail .inner-text {
   font-size: 14px;
   padding: 10px 10px;
   color: #444;
@@ -128,7 +136,7 @@
   }
 }
 
-.inner-avatar img {
+.singer-detail .inner-avatar img {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -136,7 +144,8 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border: 5px solid orange;
 }
-.inner-avatar {
+.singer-detail .inner-avatar {
   animation: spin 5s linear infinite;
+  animation-play-state: paused;
 }
 /* End: Detail song - Client */
