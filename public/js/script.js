@@ -18,11 +18,30 @@ if (aplayer) {
     autoplay: true,
   });
   const avatar = document.querySelector(".singer-detail .inner-avatar");
+
   ap.on("pause", function () {
     avatar.style.animationPlayState = "paused";
   });
+
   ap.on("play", function () {
     avatar.style.animationPlayState = "running";
+  });
+
+  ap.on("ended", function () {
+    const link = `/songs/listen/${dataSong._id}`;
+
+    const option = {
+      method: "PATCH",
+    };
+
+    fetch(link, option)
+      .then((res) => res.json())
+      .then((data) => {
+        const elementInnenListen = document.querySelector(
+          ".singer-detail .inner-listen span"
+        );
+        elementInnenListen.innerHTML = `${data.listen} lượt nghe`;
+      });
   });
 }
 // End: APLAYER

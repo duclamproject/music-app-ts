@@ -14,6 +14,9 @@ block main
                             <i class="fa-solid fa-microphone-lines"></i> #{singer.fullName}
                         div(class="inner-action inner-topic")
                             <i class="fa-solid fa-music"></i> #{topic.title}
+                        div(class="inner-action inner-listen")
+                            <i class="fa-solid fa-headphones"></i> 
+                                span #{song.listen} lượt nghe
                         div(class="inner-action inner-like" button-like=song.id)
                             <i class="fa-regular fa-thumbs-up"></i> 
                                 span #{song.like} lượt thích

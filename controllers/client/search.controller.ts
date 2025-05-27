@@ -14,8 +14,8 @@ export const result = async (req: Request, res: Response) => {
     const keywordRegex = new RegExp(keyword, "i");
 
     // Tạo slug không dấu và có dấu trừ ngăn cách (-) (Tìm kiếm theo slug) sử dụng thư viện unidecode
-    const stringSlug = convertToSlug(keyword);
-    const stringSlugRegex = new RegExp(stringSlug, "i");
+    const stringSlug = convertToSlug(keyword.trim());
+    const stringSlugRegex = new RegExp(stringSlug.trim(), "i");
 
     const songs = await Song.find({
       $or: [{ title: keywordRegex }, { slug: stringSlugRegex }],
