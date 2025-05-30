@@ -14,6 +14,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.15.0",
     "pug": "^3.0.3",
+    "tinymce": "^7.9.1",
     "unidecode": "^1.1.0"
   },
   "devDependencies": {

@@ -1,0 +1,123 @@
+/* Tổng thể header */
+.header {
+  position: relative;
+  background-color: #2c3e50; /* Màu nền tối sang trọng */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  z-index: 100;
+}
+
+/* Logo bên trái */
+.header .inner-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header .inner-logo a:hover {
+  color: #3498db;
+}
+
+/* Các nút bên phải */
+.header .text-right a {
+  margin-left: 10px;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Nút "Tài khoản" */
+.header .text-right .btn-primary {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.header .text-right .btn-primary:hover {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* Nút "Đăng xuất" */
+.header .text-right .btn-danger {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.header .text-right .btn-danger:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+/* Đảm bảo thẳng hàng */
+.header .row {
+  align-items: center;
+}
+
+/* Sider tổng thể */
+.sider {
+  width: 240px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 70px; /* Giả định header cao 70px */
+  z-index: 1;
+}
+
+/* Danh sách menu */
+.sider .inner-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sider .inner-menu ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sider .inner-menu ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: #ecf0f1;
+  font-size: 15px;
+  transition: background-color 0.3s, padding-left 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Hiệu ứng hover */
+.sider .inner-menu ul li a:hover {
+  background-color: #34495e;
+  padding-left: 25px;
+  color: #1abc9c;
+}
+
+/* Active item (nếu bạn dùng JS để thêm class "active") */
+.sider .inner-menu ul li a.active {
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+}
+
+.sider .inner-menu ul li a::before {
+  content: "•";
+  margin-right: 10px;
+  color: #bdc3c7;
+  font-size: 12px;
+}
+
+body .main {
+  margin-left: 240px;
+  padding-top: 80px;
+  padding: 20px;
+}
