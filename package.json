@@ -10,11 +10,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "cloudinary": "^2.6.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.15.0",
     "mongoose-slug-updater": "^3.3.0",
+    "multer": "^2.0.0",
     "pug": "^3.0.3",
+    "streamifier": "^0.1.1",
     "tinymce": "^7.9.1",
     "unidecode": "^1.1.0"
   },
