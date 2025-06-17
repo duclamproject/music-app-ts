@@ -17,9 +17,11 @@ export const index = async (req: Request, res: Response) => {
       _id: song.singerId,
       deleted: false,
     });
+
     item["song"] = song;
     item["singer"] = singer;
   }
+
   res.render("client/pages/favorite-songs/index", {
     pageTitle: "Bài hát yêu thích",
     favoriteSongs: favoriteSongs,

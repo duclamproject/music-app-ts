@@ -6,8 +6,6 @@ export const index = async (req: Request, res: Response) => {
     deleted: false,
   });
 
-  console.log(topics);
-
   res.render("client/pages/topics/index.pug", {
     pageTitle: "Chủ đề bài hát",
     topics: topics,

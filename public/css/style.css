@@ -138,6 +138,7 @@
   padding: 10px 10px;
   color: #444;
   border-radius: 6px;
+  white-space: pre;
 }
 
 @keyframes spin {

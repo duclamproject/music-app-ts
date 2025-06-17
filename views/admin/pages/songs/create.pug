@@ -57,6 +57,7 @@ block main
             )
         div(
             class="form-group"
+            upload-audio
         )
             label(for="audio") File âm thanh
             input(
@@ -65,6 +66,17 @@ block main
                 id="audio"
                 name="audio"
                 accept="audio/*"
+                upload-audio-input
+            )
+            audio(controls upload-audio-play)
+                source(src="")
+        div(class="form-group")
+            label(for="lyrics") Lời bài hát
+            textarea(
+                class="form-control"
+                id="lyrics"
+                name="lyrics"
+                rows="20"
             )
         div(class="form-group")
             label(for="desc") Mô tả
