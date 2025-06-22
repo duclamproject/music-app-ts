@@ -1,0 +1,372 @@
+/* Header */
+.header {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+.header .inner-logo img {
+  max-height: 50px;
+  max-width: 100%;
+}
+.header .inner-menu .ul-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.container.my-3 .box-head {
+  color: green;
+  padding: 10px 0 20px;
+}
+
+/* Detail song - Client */
+.singer-detail {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px 0;
+}
+
+.singer-detail .inner-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f7931e;
+  margin-bottom: 15px;
+}
+
+.singer-detail .inner-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.singer-detail .inner-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+}
+
+.singer-detail .inner-action i {
+  color: #555;
+}
+
+.singer-detail .inner-actions .inner-like.active {
+  color: blue;
+}
+
+.singer-detail .inner-actions .inner-like.active i {
+  font-weight: bold;
+}
+
+.singer-detail .inner-actions .inner-heart.active {
+  color: red;
+}
+
+.singer-detail .inner-actions .inner-heart.active i {
+  font-weight: bold;
+}
+
+.singer-detail .inner-action .fa-thumbs-up {
+  color: blue;
+}
+
+.singer-detail .inner-action .fa-heart {
+  color: red;
+}
+
+.singer-detail .inner-topic {
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.singer-detail .inner-heart:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.singer-detail .inner-like:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.singer-detail .inner-play {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.singer-detail .inner-audio {
+  width: 700px;
+}
+
+.singer-detail .inner-desc {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 0;
+}
+
+.singer-detail .inner-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #f7931e;
+  padding: 10px 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid black;
+}
+
+.singer-detail .inner-text {
+  font-size: 14px;
+  padding: 10px 10px;
+  color: #444;
+  border-radius: 6px;
+  white-space: pre;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.singer-detail .inner-avatar img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 5px solid orange;
+}
+.singer-detail .inner-avatar {
+  animation: spin 5s linear infinite;
+  animation-play-state: paused;
+}
+
+/* End: Detail song - Client */
+
+/* Topics */
+.card {
+  /* Các thuộc tính hiện có */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+.card-body {
+  padding: 10px 15px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  padding: 5px 12px;
+  font-size: 0.85rem;
+}
+
+/* End: Topics */
+
+/* List */
+.song-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.song-item:hover {
+  transform: translateY(-2px);
+}
+
+.song-item .inner-image {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.song-item .inner-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.song-item .inner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.song-item .inner-title a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #5c2d91;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.song-item .inner-singer,
+.song-item .inner-like,
+.song-item .inner-time {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.song-item .inner-singer {
+  font-weight: bold;
+}
+.song-item i {
+  margin-right: 6px;
+}
+
+.song-item .inner-content .inner-heart {
+  font-weight: 550;
+}
+
+.song-item .inner-content .inner-heart.active {
+  color: red;
+}
+
+.song-item .inner-content .inner-heart.active:hover {
+  cursor: pointer;
+}
+
+.song-item .inner-content .inner-heart.active i {
+  font-weight: 900;
+}
+/* End List */
+
+/* Suggest search */
+.box-search {
+  position: relative;
+}
+.box-search .inner-suggest {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  z-index: 1;
+  overflow-y: auto;
+  display: none;
+}
+
+.box-search .inner-suggest.show {
+  display: block;
+}
+
+.box-search .inner-suggest .inner-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.box-search .inner-suggest .inner-item:hover {
+  background: #efefef;
+  text-decoration: none;
+}
+
+.box-search .inner-suggest .inner-item:last-child {
+  border-bottom: 0;
+}
+
+.box-search .inner-suggest .inner-item .inner-image {
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box-search .inner-suggest .inner-item .inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-search .inner-suggest .inner-item .inner-info {
+  flex: 1;
+  margin-left: 10px;
+}
+.box-search .inner-suggest .inner-item .inner-info .inner-title {
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  --webkit-line-clamp: 1;
+  --webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4d007d;
+}
+
+.box-search .inner-suggest .inner-item .inner-info .inner-singer {
+  font-size: 13px;
+  font-weight: 500;
+  color: #282828;
+  margin-bottom: 2px;
+}
+/* End: Suggest search */
