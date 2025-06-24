@@ -1,0 +1,33 @@
+extends ../../layouts/default.pug
+include ../../mixins/box-head.pug
+block main 
+    .container.my-3
+        .row 
+            .col-12 
+                +box-head(pageTitle)
+        .row 
+            .col-12 
+                h5(class="mb-4") Bài hát gợi ý        
+        .row
+            each item in songs
+                .col-6.mb-3
+                    div(class="song-item")
+                        div(class="inner-image")
+                            a(href=`/songs/detail/${item.slug}`)
+                                img(src=item.avatar, alt="avatar")
+                        div(class="inner-content")
+                            div(class="inner-title")
+                                a(href=`/songs/detail/${item.slug}`) #{item.title}
+                            div(class="inner-singer") <i class="fa-solid fa-microphone-lines"></i> #{item.infoSinger.fullName}
+        .row 
+            .col-12 
+                h5(class="mt-4 mb-4") Chủ đề nổi bật   
+        .row 
+            each topic in topics
+                .col-6.mb-3 
+                    div(class="card")
+                        img(src=topic.avatar)
+                        div(class="card-body")
+                            h5(class="card-title") #{topic.title}
+                            p(class="card-text") #{topic.description}
+                            a(href=`/songs/${topic.slug}` class="btn btn-primary") Xem chi tiết
